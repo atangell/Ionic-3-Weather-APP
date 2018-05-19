@@ -32,7 +32,7 @@ export class HomePage {
         }
       }
       this.weatherProvider.getWeather(this.location.city, this.location.state)
-    .subscribe(weather => {
+    .subscribe((weather:any) => {
       //console.log(weather);
       this.weather = weather.current_observation;
 
